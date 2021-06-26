@@ -51,7 +51,7 @@ wget --quiet https://github.com/kinfkong/ikatago-for-colab/releases/download/$RE
 unzip -qq work.zip
 
 cd /content/work
-wget https://github.com/heinzgit/katago/blob/main/weight_urls.txt -O weight_urls.txt
+wget https://raw.githubusercontent.com/heinzgit/katago/main/weight_urls.txt -O weight_urls.txt
 WEIGHT_URL=`grep "^$WEIGHT_FILE " ./weight_urls.txt | cut -d ' ' -f2`
 echo "Using Weight URL: " $WEIGHT_URL
 mkdir -p /content/work/data/bins
