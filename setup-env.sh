@@ -3,7 +3,7 @@
 KATAGO_BACKEND=$1
 WEIGHT_FILE=$2
 USE_HIGHTHREADS=$3
-RELEASE_VERSION=2.0.0
+RELEASE_VERSION=1.4.1
 GPU_NAME=`nvidia-smi -q | grep "Product Name" | cut -d":" -f2 | tr -cd '[:alnum:]._-'`
 #GPU_NAME=TeslaT4
 
